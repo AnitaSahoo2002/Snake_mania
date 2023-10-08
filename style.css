@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../snake_bg.jpg");
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(green,yellow);
+     width: 93vmin;   
+     /* vw aur vh mei se jo bhi chota hoga woh vmin hoga  */
+     height: 93vmin;
+     border: 2px solid black;
+     /* now we will make grid of 18 rows and 18 columns */
+     display: grid;
+     grid-template-rows: repeat(18,1fr);
+     grid-template-columns:repeat(18,1fr);
+
+}
+.head{
+    background: linear-gradient(rgb(54, 1, 54),rgb(82, 1, 82));
+    border:.25vmin solid black;
+    border-radius: 8px;
+}
+
+.snake{
+   background: rgb(103, 1, 103);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background-color: orange;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+#scorebox{
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    color: #113102;
+}
